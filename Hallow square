@@ -1,0 +1,11 @@
+side = int(input("Please Enter any Side of a Square  : "))
+breadth = int(input("Please Enter any Breaddth of a Square  : "))
+
+print("Hollow Square Star Pattern") 
+for i in range(side):
+    for j in range(breadth):
+        if(i == 0 or i == side - 1 or j == 0 or j == breadth - 1):
+            print('*', end = '  ')
+        else:
+            print(' ', end = '  ')
+    print()
