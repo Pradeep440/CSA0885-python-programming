@@ -1,0 +1,8 @@
+n = input("Enter the value :")
+n = int(n)
+square = n ** 2
+cube = n ** 3
+root = n ** (1/2)
+print("\nSquare of the number :", square)
+print("Cube of the number :", cube)
+print("Cube of the number :", root)
