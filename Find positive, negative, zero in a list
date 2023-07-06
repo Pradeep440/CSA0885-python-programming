@@ -1,0 +1,18 @@
+lst = []
+positive=[]
+negative=[]
+zero=[]
+n=int(input("n"))
+for i in range (0,n):
+    x=int(input("x"))
+    lst.append(x)
+    if (x)==0:
+        zero.append(x)
+    elif x < 0:
+        positive.append(x)
+    else :
+        negative.append(x)
+print(lst)
+print(positive)
+print(negative)
+print(zero)
