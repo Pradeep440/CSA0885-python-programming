@@ -1,0 +1,8 @@
+ab=[]
+n=int(input("Enter Range: "))
+for a in range (0,n):
+    x=int(input("x"))
+    ab.append(x)
+print(ab)
+k=int(input("k: "))
+print(sorted(ab)[-k])
