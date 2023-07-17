@@ -1,0 +1,24 @@
+def add(a, b):
+    return a+b
+def sub(a, b):
+    return a-b
+def mul(a, b):
+    return a*b
+def div(a, b):
+    return a/b
+print("Enter Num 1")
+n1 = int(input())
+print("Enter Num 2")
+n2 = int(input())
+print("Operator")
+ch = input()
+if ch=='+':
+    print("\n",(add(n1, n2)))
+elif ch=='-':
+    print("\n" ,(sub(n1, n2)))
+elif ch=='*':
+    print("\n" ,(mul(n1, n2)))
+elif ch=='/':
+    print("\n" ,(div(n1, n2)))
+else:
+    print("\nInvalid Operator!")
