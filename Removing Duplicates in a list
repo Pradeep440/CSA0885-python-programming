@@ -1,0 +1,14 @@
+lst = []
+out=[]
+
+n=int(input("n"))
+for i in range (0,n):
+    x=int(input("x"))
+    lst.append(x)
+    for i in lst:
+        if i not in out:
+            out.append(i)
+
+   
+print(lst)
+print(out)
