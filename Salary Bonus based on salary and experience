@@ -1,0 +1,15 @@
+s1=float(input("Enter n1: "))
+b1=((5/s1)*100)
+b2=((7.5/s1)*100)
+b3=((20/s1)*100)
+b4=((10/s1)*100)
+if 2000< s1 <=10000:
+    print("Bonus is ",s1+b1)
+elif s1>10000:
+    print("Bonus is ",s1+b2)
+elif s1<=2000:
+    y=int(input("enter years"))
+    if y>=5:
+        print("Bonus is ",s1+b3)
+    elif y<5:
+        print("Bonus is ",s1+b4)
