@@ -1,0 +1,22 @@
+ri= {"I" : 1,
+     "V" : 5,
+     "X" : 10,
+     "L" : 50,
+     "C" : 100,
+     "D" : 500,
+     "M" : 1000
+       }
+
+ab = 0
+
+inp = input("Enter Roman Number: ").upper()
+
+for i in range(len(inp)):
+    if inp[i] in ri:
+            if i + 1 < len(inp) and ri[inp[i]] < ri[inp[i + 1]]:
+                ab -= ri[inp[i]]
+            else:
+                ab += ri[inp[i]]
+            print("The integer value is: ", ab)
+    else:
+        print("Invalid input")
