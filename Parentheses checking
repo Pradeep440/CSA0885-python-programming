@@ -1,0 +1,23 @@
+str = "{{{}}[)}"
+
+a1,a2,a3 = 0,0,0
+b1,b2,b3 = 0,0,0
+
+for char in range(0, len(str)):
+
+	if(str[char] == '{'):
+	    a1+= 1
+	elif (str[char] == '['):
+	    a2+= 1
+	elif (str[char] == '('):
+	    a3+= 1
+	elif (str[char] == '}'):
+	    b1+= 1
+	elif (str[char] == ']'):
+	    b2+= 1
+	elif (str[char] == ')'):
+	    b3+= 1
+if (a1==b1) and (a2==b2) and (a3==b3):
+    print("Balanced")
+else:
+    print("unBalance")
